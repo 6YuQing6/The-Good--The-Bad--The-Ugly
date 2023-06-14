@@ -1,6 +1,7 @@
 //Sunny Han
 //The Good, The Bad, The Ugly Game
-//Approx hrs: 
+
+//Phaser components used: cameras, text objects, tween manager, timers, tilemaps, interactive objects
 
 let config = {
     type: Phaser.CANVAS,
