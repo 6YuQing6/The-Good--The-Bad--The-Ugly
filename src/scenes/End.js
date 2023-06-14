@@ -9,10 +9,12 @@ class End extends Phaser.Scene {
         this.cameras.main.setBackgroundColor(0xbababa);
         this.add.text(20,20,"credits");
 
-        this.add.text(middleX,middleY-60,"Game made by Sunny Han").setOrigin(0.5,0.5);
+        this.add.text(middleX,middleY-60,"Coding and Art by Sunny Han").setOrigin(0.5,0.5);
         this.add.text(middleX,middleY-20,"Sound:").setOrigin(0.5,0.5);
         this.add.text(middleX,middleY,"mixkit - gunshot, revolver_chamber_spin, handgun_click").setOrigin(0.5,0.5);
         this.add.text(middleX,middleY+20,"The Good, the Bad and the Ugly (main title) - Ennio Morricone").setOrigin(0.5,0.5);
+        this.add.text(middleX,middleY+40,"The Trio - Ennio Morricone").setOrigin(0.5,0.5);
+        this.add.text(middleX,middleY+60,"Wilhelm Scream - Ben Burtt").setOrigin(0.5,0.5);
 
         const back = this.add.text(width - 60, 20, 'back');
         back.setInteractive();

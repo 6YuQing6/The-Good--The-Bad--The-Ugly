@@ -11,6 +11,10 @@ class Noose extends Phaser.GameObjects.Sprite{
 
     init(){
         this.setOrigin(0.5,0.1);
+        this.swing();
+    }
+
+    swing(){
         const swingDuration = 2000;
         const swingAngleStart = Phaser.Math.DegToRad(60);
         const swingAngleEnd = Phaser.Math.DegToRad(-60);
@@ -22,16 +26,7 @@ class Noose extends Phaser.GameObjects.Sprite{
             yoyo: true,
             repeat: -1
         })
-
-
-        /*//debugging hitbox
-        this.debugArea = this.scene.add.graphics();
-        this.debugArea.lineStyle(2,0xff0000);
-        this.debugArea.strokeRectShape(this.customArea);
-        this.debugArea.setVisible(true);
-        */
     }
-
     onClick(){
         this.input.enabled = false;
         money += 1000;
